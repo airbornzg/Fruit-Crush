@@ -160,3 +160,4 @@ MonoBehaviour:
   speed: 4
   isDynamite: 0
   itemPoints: 100
+  myClip: {fileID: 8300000, guid: 122ae2d9b96974070b8a58b8d4b81d65, type: 3}

@@ -10,12 +10,15 @@ public class ItemControl : MonoBehaviour
 
     GameControl myGameControl;
     Rigidbody2D myRigidbody;
+    AudioSource myAudioSource;
+    [SerializeField] AudioClip myClip;
     
     // Start is called before the first frame update
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
         myGameControl = GameObject.Find("Game Manager").GetComponent<GameControl>();
+        myAudioSource = GameObject.Find("Audio Source").GetComponent<AudioSource>();
         Spawn();
     }
 
@@ -36,6 +39,7 @@ public class ItemControl : MonoBehaviour
         {
             //add points
             myGameControl.AddPoints(itemPoints);
+            myAudioSource.PlayOneShot(myClip);
             Spawn();
         }
     }

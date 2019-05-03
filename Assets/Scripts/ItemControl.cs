@@ -6,13 +6,16 @@ public class ItemControl : MonoBehaviour
 {
     [SerializeField] float speed = 4;
     [SerializeField] bool isDynamite = false;
+    [SerializeField] int itemPoints = 50;
 
+    GameControl myGameControl;
     Rigidbody2D myRigidbody;
     
     // Start is called before the first frame update
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
+        myGameControl = GameObject.Find("Game Manager").GetComponent<GameControl>();
         Spawn();
     }
 
@@ -27,10 +30,12 @@ public class ItemControl : MonoBehaviour
         if(isDynamite)
         {
             //game over
+            myGameControl.GameOver();
         }
         else
         {
             //add points
+            myGameControl.AddPoints(itemPoints);
             Spawn();
         }
     }

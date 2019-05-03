@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 164379284}
   - component: {fileID: 164379287}
   - component: {fileID: 164379286}
+  - component: {fileID: 164379288}
   m_Layer: 0
   m_Name: cake
   m_TagString: Untagged
@@ -257,6 +258,20 @@ PolygonCollider2D:
       - {x: 0.305, y: -0.405}
       - {x: 0.345, y: -0.21499999}
       - {x: 0.45499998, y: -0.085}
+--- !u!114 &164379288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164379283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38bf44fbd279f428da6894ab3a86e9db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  isDynamite: 0
 --- !u!1 &302563261
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,6 +553,7 @@ GameObject:
   - component: {fileID: 1213171733}
   - component: {fileID: 1213171736}
   - component: {fileID: 1213171735}
+  - component: {fileID: 1213171737}
   m_Layer: 0
   m_Name: dynamite
   m_TagString: Untagged
@@ -689,6 +705,20 @@ PolygonCollider2D:
       - {x: 0.005, y: 0.21499999}
       - {x: -0.005, y: 0.205}
       - {x: 0.005, y: 0.205}
+--- !u!114 &1213171737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213171732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38bf44fbd279f428da6894ab3a86e9db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  isDynamite: 1
 --- !u!1 &1330264102
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,6 +731,7 @@ GameObject:
   - component: {fileID: 1330264103}
   - component: {fileID: 1330264106}
   - component: {fileID: 1330264105}
+  - component: {fileID: 1330264107}
   m_Layer: 0
   m_Name: apple
   m_TagString: Untagged
@@ -837,6 +868,20 @@ PolygonCollider2D:
       - {x: 0.255, y: -0.475}
       - {x: 0.265, y: -0.465}
       - {x: 0.42499998, y: -0.225}
+--- !u!114 &1330264107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330264102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38bf44fbd279f428da6894ab3a86e9db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  isDynamite: 0
 --- !u!1 &2021583521
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,6 +894,7 @@ GameObject:
   - component: {fileID: 2021583522}
   - component: {fileID: 2021583525}
   - component: {fileID: 2021583524}
+  - component: {fileID: 2021583526}
   m_Layer: 0
   m_Name: banana
   m_TagString: Untagged
@@ -981,3 +1027,17 @@ PolygonCollider2D:
       - {x: 0.21499999, y: -0.42499998}
       - {x: 0.345, y: -0.315}
       - {x: 0.39499998, y: -0.145}
+--- !u!114 &2021583526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021583521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38bf44fbd279f428da6894ab3a86e9db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  isDynamite: 0
